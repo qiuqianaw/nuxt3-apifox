@@ -20,14 +20,9 @@
         <a-button class="button-desktop" type="primary" size="large"
           >下载桌面版</a-button
         >
-        <!-- TODO 下拉按钮 -->
-        <!-- <a-button>
-          <template #icon>
-            <icon-down />
-          </template>
-        </a-button> -->
+
         <template #content>
-          <a-doption v-for="item in downloadLink.data">
+          <a-doption v-for="(item, index) in downloadLink.data" :key="index">
             <NuxtLink
               :to="item.url"
               style="text-decoration: none; color: black"
@@ -56,7 +51,7 @@
         :auto-play="true"
         :default-current="2"
       >
-        <a-carousel-item v-for="image in images.data">
+        <a-carousel-item v-for="(image, index) in images.data" :key="index">
           <img
             :src="image.url"
             :style="{
@@ -74,10 +69,9 @@ const { data: images } = await useFetch("/api/gallery", { pick: ["data"] });
 const { data: downloadLink } = await useFetch("/api/download-links", {
   pick: ["data"],
 });
-console.log(downloadLink);
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .image-gallery-module {
   background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bottom-bg.png)
     bottom no-repeat;

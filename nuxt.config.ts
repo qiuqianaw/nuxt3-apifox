@@ -4,5 +4,9 @@ import { defineNuxtConfig } from "nuxt";
 export default defineNuxtConfig({
   build: {
     transpile: ["compute-scroll-into-view"],
+    // modules: ["@nuxtjs/style-resources"],
+    styleResources: {
+      scss: "./assets/variables.scss",
+    },
   },
 });

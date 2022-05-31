@@ -37,7 +37,7 @@
 const { data: links } = await useFetch("/api/links", { pick: ["data"] });
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .layout-demo {
   width: 100%;
   z-index: 6;
