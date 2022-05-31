@@ -58,10 +58,12 @@ const { data: images } = await useFetch("/api/gallery", { pick: ["data"] });
 </script>
 
 <style scoped>
+.image-gallery-module {
+  background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bottom-bg.png)
+    bottom no-repeat;
+}
 .container {
   background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bg.png);
-  /* background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bg.png)
-    bottom no-repeat; */
   box-sizing: border-box;
   width: 100%;
   /* max-width: 1176px; */
@@ -125,5 +127,8 @@ const { data: images } = await useFetch("/api/gallery", { pick: ["data"] });
   cursor: pointer;
   margin-left: 25px;
   border: 1px solid #f44a53;
+}
+.header-H1 {
+  padding: 100px 0;
 }
 </style>
