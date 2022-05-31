@@ -16,10 +16,26 @@
       </p>
     </div>
     <div class="button-area">
-      <a-button class="button-desktop" type="primary" size="large"
-        >下载桌面版</a-button
-      >
-
+      <a-dropdown trigger="hover" :popup-max-height="false">
+        <a-button class="button-desktop" type="primary" size="large"
+          >下载桌面版</a-button
+        >
+        <!-- TODO 下拉按钮 -->
+        <!-- <a-button>
+          <template #icon>
+            <icon-down />
+          </template>
+        </a-button> -->
+        <template #content>
+          <a-doption v-for="item in downloadLink.data">
+            <NuxtLink
+              :to="item.url"
+              style="text-decoration: none; color: black"
+              >{{ item.title }}</NuxtLink
+            >
+          </a-doption>
+        </template>
+      </a-dropdown>
       <a-button class="button-web" type="outline" size="large" status="danger">
         <NuxtLink
           target="_blank"
@@ -32,7 +48,7 @@
     <div class="image-gallery-module">
       <a-carousel
         :style="{
-          width: '68%',
+          width: '1244px',
           height: '765px',
           // padding: '0 500px',
           margin: '0 auto',
@@ -55,6 +71,10 @@
 
 <script setup>
 const { data: images } = await useFetch("/api/gallery", { pick: ["data"] });
+const { data: downloadLink } = await useFetch("/api/download-links", {
+  pick: ["data"],
+});
+console.log(downloadLink);
 </script>
 
 <style scoped>
@@ -129,6 +149,6 @@ const { data: images } = await useFetch("/api/gallery", { pick: ["data"] });
   border: 1px solid #f44a53;
 }
 .header-H1 {
-  padding: 100px 0;
+  padding: 23px 0;
 }
 </style>
