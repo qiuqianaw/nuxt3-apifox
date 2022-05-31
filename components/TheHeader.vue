@@ -39,11 +39,14 @@ const { data: links } = await useFetch("/api/links", { pick: ["data"] });
 
 <style scoped>
 .layout-demo {
-  /* background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bottom-bg.png)
-    bottom no-repeat; */
-  /* background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bg.png); */
-  background: transparent;
+  width: 100%;
+  z-index: 6;
+  position: fixed;
+  top: 0;
   opacity: 1;
+  background: hsla(0, 0%, 100%, 0.85);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 4px 6px rgb(0 0 0 / 4%);
 }
 .header {
   padding: 0 300px;
