@@ -21,13 +21,7 @@
     <div class="feature">
       <div class="title">功能特性</div>
       <div class="feat">
-        <a-grid
-          :cols="2"
-          :colGap="0"
-          :rowGap="0"
-          class="grid-demo-grid"
-          :collapsed="collapsed"
-        >
+        <a-grid :cols="2" :colGap="0" :rowGap="0" class="grid-demo-grid">
           <a-grid-item
             class="demo-item"
             v-for="(item, index) in features.data"
@@ -48,6 +42,11 @@
         </a-grid>
       </div>
     </div>
+    <div class="more-function">
+      <a-button type="outline" shape="round" long size="large" disabled
+        >更多功能介绍 >
+      </a-button>
+    </div>
   </div>
 </template>
 
@@ -62,17 +61,8 @@ const { data: features } = await useFetch("/api/feature", {
 </script>
 <script>
 import { IconUser } from "@arco-design/web-vue/es/icon";
-import { ref } from "vue";
-
 export default {
   components: { IconUser },
-  setup() {
-    const collapsed = ref(false);
-
-    return {
-      collapsed,
-    };
-  },
 };
 </script>
 
