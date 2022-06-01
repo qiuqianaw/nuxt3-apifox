@@ -1,0 +1,37 @@
+.button-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  .button-desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(
+      45deg,
+      #ff387e 6.54%,
+      #ff386d 21.35%,
+      #f44a53 64.03%,
+      #f35e3a 92.78%
+    );
+  }
+  .button-web {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #f44a53;
+    cursor: pointer;
+    margin-left: 25px;
+    border: 1px solid #f44a53;
+  }
+}

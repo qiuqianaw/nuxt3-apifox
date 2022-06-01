@@ -12,7 +12,7 @@
             </div>
           </a-col>
           <a-col flex="auto">
-            <div></div>
+            <div style="display: none"></div>
           </a-col>
           <a-col flex="auto">
             <a-grid :cols="links.data.length" class="grid-demo-grid">
@@ -74,14 +74,10 @@ const { data: links } = await useFetch("/api/links", { pick: ["data"] });
 .layout-demo :deep(.arco-layout-header),
 .layout-demo :deep(.arco-layout-footer) {
   height: 64px;
-  /* background-color: var(--color-primary-light-4); */
-  /* filter: blur(1px); */
 }
 
 .layout-demo :deep(.arco-layout-sider) {
   width: 206px;
-  /* background-color: var(--color-primary-light-3); */
-  /* filter: blur(1px); */
 }
 
 .layout-demo :deep(.arco-layout-content) {
@@ -93,11 +89,5 @@ const { data: links } = await useFetch("/api/links", { pick: ["data"] });
   line-height: 48px;
   color: var(--color-white);
   text-align: center;
-}
-.grid-demo-grid .demo-item:nth-child(2n) {
-  /* background-color: rgba(var(--arcoblue-6), 0.9); */
-}
-.grid-demo-grid .demo-item:nth-child(2n + 1) {
-  /* background-color: var(--color-primary-light-4); */
 }
 </style>

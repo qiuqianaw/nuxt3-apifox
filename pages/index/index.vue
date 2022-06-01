@@ -2,7 +2,8 @@
   <div class="container">
     <IndexHead />
     <ButtonArea />
-    <ImageGalleryModule />
+    <ImageGallery />
+    <PublicProject />
   </div>
 </template>
 

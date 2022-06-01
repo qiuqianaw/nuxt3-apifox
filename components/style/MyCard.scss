@@ -1,0 +1,28 @@
+.my-card {
+  //   background-color: cornflowerblue;
+//   border: 1px solid black;
+  width: 528px;
+  //   height: 280px;
+  padding: 20px;
+  .card-title {
+    // border: 1px solid black;
+
+    display: flex;
+    .card-icon {
+      padding: 5px 20px;
+    }
+    .card-title_ {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: rgba(0, 0, 0, 0.85);
+    }
+  }
+  .card-content {
+    // border: 1px solid black;
+    height: 175px;
+    line-height: 23px;
+    color: #4e5969;
+  }
+}

@@ -1,0 +1,15 @@
+.container {
+  .image-gallery-module {
+    background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bottom-bg.png)
+      bottom no-repeat;
+      margin-bottom: 80px;
+    .swiper {
+      width: 1244px;
+      height: 765px;
+      margin: 0 auto;
+      .swiper-item {
+        width: 100%;
+      }
+    }
+  }
+}
