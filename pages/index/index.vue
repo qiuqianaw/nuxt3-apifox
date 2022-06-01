@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <HeaderH1 />
+    <IndexHead />
     <ButtonArea />
     <ImageGalleryModule />
   </div>
