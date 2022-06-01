@@ -33,7 +33,7 @@
             v-for="(item, index) in features.data"
             :key="index"
           >
-          <!-- TODO 写组件 -->
+            <!-- TODO 写组件 -->
             <!-- <div class="card-container">
               <a-card class="card_" :title="item.title">
                 <ol>
@@ -43,7 +43,7 @@
                 </ol>
               </a-card>
             </div> -->
-            <MyCard/>
+            <MyCard :data="item" />
           </a-grid-item>
         </a-grid>
       </div>
