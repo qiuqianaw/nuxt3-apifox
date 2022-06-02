@@ -2,7 +2,6 @@
   <div class="my-card">
     <div class="card-title">
       <div class="card-icon">
-        <!-- <a-avatar :size="40" shape="square">{{ title }}</a-avatar> -->
         <a-avatar :size="45" shape="square">
           <img
             alt="avatar"

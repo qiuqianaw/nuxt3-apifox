@@ -1,0 +1,24 @@
+.button-container {
+  button {
+    // background-color: forestgreen;
+    border-radius: 50px;
+    font-size: 30px;
+    // padding: 20px;
+    padding-left: 8px;
+    color: rgba(24, 24, 25, 0.7);
+    border: 1px solid #e6e7e9;
+    border-radius: 70px;
+    font-size: 15px;
+    width: 240px;
+    display: block;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: rgb(255, 255, 255);
+  }
+  button:hover {
+    transform: translateY(-2px);
+    color: #f85250;
+    border: 1px solid #f85250;
+  }
+}

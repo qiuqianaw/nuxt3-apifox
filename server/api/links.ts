@@ -34,6 +34,11 @@ const links = [
     title: "建议反馈",
     link: "/feedback",
   },
+  {
+    id: 8,
+    title: "TEST",
+    link: "/test",
+  },
 ];
 
 export default () => {

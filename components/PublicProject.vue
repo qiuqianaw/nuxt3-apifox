@@ -27,25 +27,13 @@
             v-for="(item, index) in features.data"
             :key="index"
           >
-            <!-- TODO 写组件 -->
-            <!-- <div class="card-container">
-              <a-card class="card_" :title="item.title">
-                <ol>
-                  <li v-for="(item_, index_) in item.content" :key="index_">
-                    {{ item_ }}
-                  </li>
-                </ol>
-              </a-card>
-            </div> -->
             <MyCard :data="item" />
           </a-grid-item>
         </a-grid>
       </div>
     </div>
     <div class="more-function">
-      <a-button type="outline" shape="round" long size="large" disabled
-        >更多功能介绍 >
-      </a-button>
+      <MyButton />
     </div>
   </div>
 </template>

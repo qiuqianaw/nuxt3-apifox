@@ -1,11 +1,13 @@
 .pp-outter {
   //   height: 72px;
-  //   background-color: goldenrod;
+  // background-color: goldenrod;
+  padding-bottom: 120px;
   .row {
     display: flex;
     justify-content: center;
-    align-items: center;
+    // background-color: rgb(112, 67, 67);
     .grid-demo {
+      // background-color: rgb(126, 44, 44);
       .card {
         width: 202px;
         margin-left: 50px;
@@ -30,6 +32,7 @@
   }
   .feature {
     // background-color: blueviolet;
+    padding: 80px 0;
     .title {
       font-weight: 600;
       font-size: 36px;
@@ -38,13 +41,16 @@
       margin-bottom: 0;
       text-align: center;
       margin: 64px 0;
-      // background-color: #fff;
     }
     .feat {
       display: flex;
       justify-content: center;
+      // background-color: rgb(147, 35, 145);
+
       .demo-item {
+        // background-color: green;
         .card-container {
+          background-color: rgb(64, 84, 98);
           display: flex;
           justify-content: center;
           align-items: center;

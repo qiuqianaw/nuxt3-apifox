@@ -11,7 +11,8 @@
     "@nuxtjs/style-resources": "^1.2.1",
     "node-sass": "^7.0.1",
     "nuxt": "3.0.0-rc.3",
-    "sass": "^1.52.1"
+    "sass": "^1.52.1",
+    "svg-sprite-loader": "^6.0.11"
   },
   "dependencies": {
     "sass-loader": "^7.3.1"

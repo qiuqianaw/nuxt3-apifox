@@ -1,10 +1,12 @@
 .my-card {
-//   background-color: #fff;
+  // background-color: rgb(255, 255, 255);
   border: 1px solid rgb(248, 248, 248);
   width: 528px;
-  //   height: 280px;
-  padding: 10px;
   margin: 10px;
+  padding: 40px 80px 32px 0;
+  vertical-align: baseline;
+  box-shadow: 0 8px 32px rgb(0 0 0 / 4%);
+  border-radius: 8px;
   .card-title {
     // border: 1px solid black;
     display: flex;

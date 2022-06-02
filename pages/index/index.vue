@@ -4,6 +4,7 @@
     <ButtonArea />
     <ImageGallery />
     <PublicProject />
+    <ApiHub />
   </div>
 </template>
 
@@ -16,6 +17,6 @@
   width: 100%;
   /* max-width: 1176px; */
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0;
 }
 </style>
