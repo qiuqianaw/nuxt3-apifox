@@ -5,6 +5,7 @@
     <ImageGallery />
     <PublicProject />
     <ApiHub />
+    <Price />
   </div>
 </template>
 
@@ -12,11 +13,8 @@
 
 <style scoped lang="scss">
 .container {
-  // background: url(https://cdn.apifox.cn/www/assets/image/index/hero-bg.png);
-  box-sizing: border-box;
   width: 100%;
-  /* max-width: 1176px; */
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 }
 </style>
